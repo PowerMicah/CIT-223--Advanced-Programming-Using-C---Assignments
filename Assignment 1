@@ -1,0 +1,26 @@
+/* Chapter 1 Programming Exercise #4
+ * Micah Barga
+ * CIT 223s
+ * January 15,2013
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("***********************************************");
+            Console.WriteLine("*    Chapter 1 Programming Assignment #4      *");
+            Console.WriteLine("*    Developer:                Micah Barga    *");
+            Console.WriteLine("*    Date Submitted:           January 22     *");
+            Console.WriteLine("*    Purpose: Provide internal documentation. *");
+            Console.WriteLine("***********************************************");
+            Console.Read();
+        }
+    }
+}
