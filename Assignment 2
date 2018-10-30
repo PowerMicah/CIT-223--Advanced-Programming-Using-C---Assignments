@@ -1,0 +1,24 @@
+/* Chapter 2 Programming Exercise #10
+ * Micah Barga
+ * CIT 223
+ * January 23, 2013
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double PI = 3.14159,
+                   radius = 18,
+                   circumference = 2 * PI * radius;
+            Console.WriteLine("It is " + circumference + " that is your circle's circumference");
+            Console.Read(); 
+        }
+    }
+}
