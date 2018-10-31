@@ -1,0 +1,87 @@
+/* Chapter 3 Programming Challenge #7
+ * Micah Barga
+ * CIT223S
+ * January 30, 2013
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    public class Integers
+    {
+        public static void Main()
+        {
+            Instructions();
+            Console.Read();
+        }
+        public static void Instructions() //This method will instruct the user on the program
+        {
+            int valueOne,
+                valueTwo,
+                result;
+            string numOne,
+                   numTwo;
+            Console.Write("Please enter your first integer: ");
+            numOne = Console.ReadLine();
+            valueOne = int.Parse(numOne);
+            result = SquareOne(valueOne);
+            PrintSquareOne(result);
+            Console.WriteLine();
+            Console.Write("Please enter your second integer: ");
+            numTwo = Console.ReadLine();
+            valueTwo = int.Parse(numTwo);
+            result = SquareTwo(valueTwo);
+            PrintSquareTwo(result);
+            Console.WriteLine();
+            result = Sum(valueOne, valueTwo);
+            PrintSum(result);
+            result = Product(valueOne, valueTwo);
+            PrintProduct(result);
+            result = Average(valueOne, valueTwo);
+            PrintAverage(result);
+        }
+        public static int Sum(int IntegerOne, int IntegerTwo) //This method will solve the sum of the values
+        {
+            return IntegerOne + IntegerTwo;
+        }
+        public static void PrintSum(int aResult) //This method will print the results for the sum
+        {
+            Console.WriteLine("The sum of your integers is " + aResult);
+        }
+        public static int Product(int IntegerOne, int IntegerTwo) //This method will solve the product of the values
+        {
+            return IntegerOne * IntegerTwo;
+        }
+        public static void PrintProduct(int aResult) //This method will print the results for the product
+        {
+            Console.WriteLine("The product of your integers is " + aResult);
+        }
+        public static int Average(int IntegerOne, int IntegerTwo) //This method will solve the average of the values
+        {
+            return (IntegerOne + IntegerTwo) / 2;
+        }
+        public static void PrintAverage(int aResult) //This method will print the results for the product
+        {
+            Console.WriteLine("The average of your integers is " + aResult);
+        }
+        public static int SquareOne(int IntegerOne) //This method will square the first integer
+        {
+            return IntegerOne * IntegerOne;
+        }
+        public static void PrintSquareOne(int aResult)  //This method will print the results for the first integer squared
+        {
+            Console.WriteLine("Your first integer squared is " + aResult);
+        }
+        public static int SquareTwo(int IntegerTwo) //This method will square the second integer
+        {
+            return IntegerTwo * IntegerTwo;
+        }
+        public static void PrintSquareTwo(int aResult)  //This method will print the results for the second integer squared
+        {
+            Console.WriteLine("Your second integer squared is " + aResult);
+        }
+    }
+}
