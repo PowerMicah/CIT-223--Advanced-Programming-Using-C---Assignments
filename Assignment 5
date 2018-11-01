@@ -1,0 +1,268 @@
+/* Chapter 5 Programming Exercise #2
+ * Micah Barga
+ * CIT 223S
+ * February 13, 2013
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main( )
+		{
+
+            int monthSelection, //Month input
+                daySelection; //Day input
+            Console.Write("Please enter your month number: ");
+            monthSelection = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+			switch(monthSelection) //Value input for months
+			{
+				case 1:	Console.WriteLine("January");
+					break;
+				case 2:	Console.WriteLine("February");
+                    break;
+				case 3:	Console.WriteLine("March");
+					break;
+				case 4:	Console.WriteLine("April");
+					break;
+				case 5:	Console.WriteLine("May");
+					break;
+				case 6:	Console.WriteLine("June");
+					break;
+				case 7:	Console.WriteLine("July");
+					break;
+				case 8:	Console.WriteLine("August");
+					break;
+                case 9: Console.WriteLine("September");
+                    break;
+                case 10: Console.WriteLine("October");
+                    break;
+                case 11: Console.WriteLine("November");
+                    break;
+                case 12: Console.WriteLine("December");
+                    break;
+				default: Console.WriteLine(monthSelection+ " is not a month. Please try again later.");	
+					break;
+			}
+            if ((monthSelection >= 1) && (monthSelection <= 12)) //Calls argument below when user inputs proper month value
+            {
+                Console.WriteLine();
+                Console.Write("Please enter your day number: ");
+                daySelection = Convert.ToInt32(Console.ReadLine());
+                if (((monthSelection != 2) && (monthSelection != 4) && (monthSelection != 6) &&
+                    (monthSelection != 9) && monthSelection != 11))
+                {
+                    Console.WriteLine();
+                    switch (daySelection) //Switch statement for all months containing 31 days
+                    {
+                        case 1: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 2: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 3: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 4: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 5: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 6: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 7: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 8: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 9: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 10: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 11: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 12: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 13: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 14: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 15: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 16: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 17: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 18: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 19: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 20: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 21: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 22: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 23: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 24: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 25: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 26: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 27: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 28: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 29: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 30: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 31: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        default: Console.WriteLine(daySelection + " is not a day in month " + monthSelection + ". Please try again later.");
+                            break;
+                    }
+                }
+                else if (((monthSelection != 1) && (monthSelection != 2) && (monthSelection != 3) && (monthSelection != 5) &&
+                        (monthSelection != 7) && (monthSelection != 8) && (monthSelection != 10)))
+                {
+                    Console.WriteLine();
+                    switch (daySelection) //Switch statement for all months containing 30 days
+                    {
+                        case 1: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 2: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 3: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 4: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 5: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 6: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 7: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 8: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 9: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 10: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 11: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 12: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 13: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 14: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 15: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 16: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 17: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 18: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 19: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 20: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 21: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 22: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 23: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 24: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 25: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 26: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 27: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 28: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 29: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 30: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        default: Console.WriteLine(daySelection + " is not a day in month " + monthSelection + ". Please try again later.");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine();
+                    switch (daySelection) //Switch statement for February
+                    {
+                        case 1: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 2: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 3: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 4: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 5: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 6: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 7: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 8: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 9: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 10: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 11: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 12: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 13: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 14: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 15: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 16: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 17: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 18: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 19: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 20: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 21: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 22: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 23: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 24: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 25: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 26: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 27: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        case 28: Console.WriteLine("Day " + daySelection + " of the month");
+                            break;
+                        default: Console.WriteLine(daySelection + " is not a day in month " + monthSelection + ". Please try again later.");
+                            break;
+                    }
+                }
+            }
+            Console.Read();
+        }
+    }
+}
