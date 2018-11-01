@@ -1,0 +1,88 @@
+/* Chapter 4 Programming Exercise #5
+ * Micah Barga
+ * CIT 223S
+ * February 6, 2013
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Trip
+{
+    class Trip
+    {
+        private double travelDistance;
+        private double gasCost;
+        private double numGallons;
+
+        public Trip() //This is the default method
+        {
+            
+        }
+        public Trip(double distance, double price, double gallons) //This is a constructor with three arguments
+        {
+            distance = travelDistance;
+            price = gasCost;
+            numGallons = gallons;
+        }
+        public double TravelDistance //This is the property identifier for the distance
+        {
+            get
+            {
+                return travelDistance;
+            }
+            set
+            {
+                travelDistance = value;
+            }
+        }
+        public double GasCost //This is the property identifier for the gas price
+        {
+            get
+            {
+                return gasCost;
+            }
+            set
+            {
+                gasCost = value;
+            }
+        }
+        public double GallonConsume //This is the property identifier for the gallons used
+        {
+            get
+            {
+                return numGallons;
+            }
+            set
+            {
+                numGallons = value;
+            }
+        }
+        public double GetDistanceTraveled()
+        {
+            return travelDistance;
+        }
+        public double GetGasPrice()
+        {
+            return gasCost;
+        }
+        public double GetGallonsConsumed()
+        {
+            return numGallons;
+        }
+        public double GetMilesPerGallon()
+        {
+            return (travelDistance / numGallons);
+        }
+        public double GetCostPerMile()
+        {
+            return (gasCost / travelDistance);
+        }
+        public override string ToString()
+        {
+            return "Miles per gallon: " +GetMilesPerGallon().ToString("f2") +
+            "\nCost per mile: " +GetCostPerMile().ToString("C");
+        }
+    }
+}
